@@ -1,0 +1,128 @@
+.about__toggle {
+    display: flex;
+    border-radius: 10px;
+    background-color: #ddd;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.about__toggle_button {
+    border: none;
+    padding: 12px 23px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.about__toggle_button--active {
+    background-color: #7709FF;
+    color: white;
+}
+
+.about__content {
+    display: none;
+}
+
+.about__content--active {
+    display: block;
+}
+
+
+.partners__toggle {
+    display: flex;
+    border-radius: 10px;
+    background-color: #2D2D2D;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.partners__toggle_button {
+    border: none;
+    padding: 12px 23px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    color: #797979;
+}
+
+.partners__toggle_button--active {
+    background-color: #7709FF;
+    color: white;
+}
+
+.partners__content {
+    display: none;
+}
+
+.partners__content--active {
+    display: block;
+}
+
+
+@media screen and (max-width: 480px) {
+    .about__toggle {
+        display: flex;
+        border-radius: 10px;
+        background-color: #ddd;
+        width: fit-content;
+        margin: 26px auto;
+    }
+    
+    .about__toggle_button {
+        border: none;
+        padding: 12px 15px;
+        font-size: 15px;
+        border-radius: 10px;
+        background: none;
+        cursor: pointer;
+        color: #666;
+    }
+    
+    .about__toggle_button--active {
+        background-color: #7709FF;
+        color: white;
+    }
+    
+    .about__content {
+        display: none;
+    }
+    
+    .about__content--active {
+        display: block;
+    }
+    
+    
+    .partners__toggle {
+        display: flex;
+        border-radius: 10px;
+        background-color: #2D2D2D;
+        width: fit-content;
+        margin: 30px auto;
+    }
+    
+    .partners__toggle_button {
+        border: none;
+        padding: 12px 15px;
+        font-size: 15px;
+        border-radius: 10px;
+        background: none;
+        cursor: pointer;
+        color: #797979;
+    }
+    
+    .partners__toggle_button--active {
+        background-color: #7709FF;
+        color: white;
+    }
+    
+    .partners__content {
+        display: none;
+    }
+    
+    .partners__content--active {
+        display: block;
+    }
+}

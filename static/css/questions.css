@@ -1,0 +1,129 @@
+.questions {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 99px;
+    padding-top: 28px;
+    position: relative;
+}
+
+.questions__title {
+    color: white;
+    font-size: clamp(32px, 4vw, 64px);
+    margin-bottom: 34px;
+}
+
+.questions__wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.questions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.questions__accordeon {
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.questions__accordeon_header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.questions__accordeon_header-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.questions__accordeon_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+
+}
+
+.questions__accordeon_desc {
+    margin: 40px 0 0 0;
+    color: white;
+    font-size: 20px;
+
+}
+
+.questions__accordeon:hover {
+    border: 1px solid #7709FF;
+}
+
+
+.questions__accordeon.active {
+    border: 1px solid #7709FF;
+}
+.questions__accordeon.active .questions__accordeon_content {
+    max-height: 100px; 
+}
+
+.questions__accordeon.active .questions__accordeon_header-arrow {
+    transform: rotate(90deg); 
+}
+
+
+.questions__figure {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 70px;
+    height: 80px;
+}
+
+.questions__figure-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 80px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .questions__list {
+        gap: 20px;
+    }
+
+    .questions__title  {
+        font-size: 24px;
+    }
+
+    .questions__accordeon_header-title {
+        font-size: 15px;
+    }
+
+    .questions__accordeon_desc {
+        font-size: 15px;
+    }
+
+    .questions__figure {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 31px;
+        height: 42px;
+    }
+    
+    .questions__figure-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 31px;
+        height: 42px;
+    }
+}

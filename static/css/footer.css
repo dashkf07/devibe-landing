@@ -1,0 +1,156 @@
+
+
+.footer {
+    padding-bottom: 33px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer__wrapper {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 21px 53px 21px 21px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info-title {
+    font-size: clamp(32px, 4vw, 64px);
+    line-height: 0.9;
+}
+
+.footer__info_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.footer_info_contacts-text {
+    font-size: 20px;
+}
+
+
+.footer__button {
+    background-color: black;
+    font-size: clamp(14px, 2vw, 20px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 44px;
+    padding-left: 23px;
+    padding-right: 4px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 47px;
+    color: white;
+
+}
+
+.footer__button_arrow {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer__background {
+    position: absolute;
+    z-index: 0;
+    left: -250px;
+    scale: 1.5;
+}
+
+@media screen and (max-width: 1034px) {
+    .footer__background {
+        scale: 1.2;
+        left: -200px;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    .footer__background {
+        scale: 1.2;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__background {
+        position: absolute;
+        z-index: 0;
+        left: 20px;
+        scale: 0.8;
+        top: -20px;
+    }
+
+    .footer__wrapper {
+        padding: 11px 15px 15px 11px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        
+    }
+
+    .footer__info-title {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .footer__info_contacts {
+        margin-top: 16px;
+        gap: 9px;
+    }
+
+    .footer_info_contacts-text {
+        font-size: 15px;
+    }
+
+    .footer__button {
+        justify-self: flex-end;
+        gap: 20px;
+    }
+
+    .footer__button {
+        background-color: black;
+        font-size: clamp(14px, 2vw, 20px);
+        height: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding-left: 18px;
+        padding-right: 4px;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-top: 47px;
+        color: white;
+    
+    }
+    
+    .footer__button_arrow {
+        background-color: white;
+        width: 26px;
+        height: 26px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}

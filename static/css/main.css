@@ -1,0 +1,214 @@
+.main {
+    width: 100%;
+    background-color: black;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.main__wrapper {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    height: 70%;
+}
+
+.main__logo {
+    font-size: clamp(32px, 4vw, 64px);
+    color: white;
+    position: absolute;    
+    display: flex;
+    flex-direction: column;
+}
+
+.main__logo img {
+    width: 50%;
+    height: auto;
+}
+
+.main__title {
+    font-size: clamp(24px, 3.5vw, 48px);
+    color: white;
+    position: absolute;
+    right: 0;
+}
+
+.main__description {
+    font-size: clamp(14px, 2vw, 20px);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    max-width: 700px;
+}
+
+
+
+
+.main__background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/logo_main.svg"); 
+    background-size: contain; /* Растягиваем по ширине */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1 !important;
+}
+
+.main__button {
+    background-color: white;
+    font-size: clamp(14px, 2vw, 20px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 44px;
+    padding-left: 23px;
+    padding-right: 4px;
+    font-weight: 500;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main__button_arrow {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        background-color: black;
+        height: 631px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    .main__wrapper {
+        width: 90%;
+        margin: auto;
+        position: relative;
+        height: 100%;
+        margin-top: 24px;
+    }
+
+    .main__background {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 280px;
+        height: 200px;
+        transform: translate(-50%, 0);
+        background-image: url("../images/main-background-mobile.svg"); 
+        background-size: contain; /* Растягиваем по ширине */
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1 !important;
+    }
+
+    .main__border-top {
+        width: 190px;
+        height: 1px;
+        background-color: #555555;
+        position: absolute;
+        z-index: 4;
+        top: 340px;
+    }
+
+    .main__border-bottom {
+        width: 190px;
+        height: 1px;
+        background-color: #555555;
+        position: absolute;
+        z-index: 4;
+        top: 465px;
+        right: 0;
+    }
+
+
+    .main__title {
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 200px
+    }
+
+    .main__description {
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        top: 361px;
+        width: unset;
+        max-width: 700px;
+    }
+
+    .main__button {
+        background-color: white;
+        font-size: clamp(14px, 2vw, 20px);
+        height: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 190px;
+        padding-left: 18px;
+        padding-right: 4px;
+        font-weight: 500;
+        border-radius: 5px;
+        gap: 20px;
+        position: absolute;
+        top: 490px;
+        right: 0;
+    }
+    
+    .main__button_arrow {
+        background-color: black;
+        width: 26px;
+        height: 26px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__logo {
+        font-size: 40px;
+    }
+
+    .main__title {
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 200px
+    }
+
+    .main__description {
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        top: 361px;
+        width: unset;
+        max-width: 700px;
+    }
+}

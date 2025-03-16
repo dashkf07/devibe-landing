@@ -1,0 +1,142 @@
+.contacts {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 99px;
+    padding-top: 28px;
+}
+
+.contacts__title {
+    color: white;
+    font-size: clamp(32px, 4vw, 64px);
+}
+
+.contacts__wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.contacts__desc{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 63px;  
+    margin-top: 14px;
+    color: white;
+}
+
+
+.contacts__form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.contacts_form_textarea {
+    all:unset;
+    box-sizing: border-box;
+    max-height: 84px;
+    height: 84px;
+}
+
+.contacts__form-row {
+    display: grid;
+    gap: 27px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contacts__form_input {
+    height: 56px;
+}
+
+.contacts__form_input,
+.contacts_form_textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+    background-color: white;
+}
+
+
+
+.contacts__form_input.error,
+.contacts_form_textarea.error {
+    border-color: #7709FF; 
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__form {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contacts_form_textarea {
+        all:unset;
+        box-sizing: border-box;
+        max-height: 84px;
+        height: 84px;
+    }
+    
+    .contacts__form-row {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contacts__form_input {
+        height: 40px;
+    }
+
+    .contacts__form_input,
+.contacts_form_textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+    background-color: white;
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .contacts__title {
+        font-size: 24px;
+    }
+
+    .contacts__desc {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .contacts__form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px
+    }
+    
+    .contacts__form_input {
+        height: 42px;
+    }
+
+
+.contacts__form {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#send-button {
+    margin: 12px auto;
+}
+
+    
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+        content="Платформа для работодателей и IT-специалистов, упрощающая поиск сотрудников и вакансий. Уникальные особенности: использование NFT-сертификатов для подтверждения умений специалистов и встроенные курсы повышения квалификации."/>
+    <meta name="keywords" 
+        content="Devibe, девайб, вакансии, фриланс, freelance, специалисты, IT-специалисты, работодатели, работа, программирование, IT, айти, дизайн, design, designer, дизайнер, бэкенд, фронтенд, backend, frontend, HR, HR-технологии, blockchain, блокчейн, web3, NFT, nft-сертификаты, токены, подтверждение квалификации, квалификация, курсы, курсы повышения квалификации, поиск вакансий, поиск работы, поиск специалистов, поиск сотрудников, сотрудники, потдверждение квалификации"/>
+    <title>Devibe</title>
+    <link rel="icon" href="./static/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/main.css" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/about.css" />
+    <link rel="stylesheet" href="./static/css/partners.css" />
+    <link rel="stylesheet" href="./static/css/toggle.css" />
+    <link rel="stylesheet" href="./static/css/questions.css" />
+    <link rel="stylesheet" href="./static/css/contacts.css"/>
+    <link rel="stylesheet" href="./static/css/footer.css" />
+    <link rel="stylesheet" href="./static/css/modal.css" />
+</head>
+<body>
+
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Спасибо за внимание!</br> Мы свяжемся с вами.</p>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="main__wrapper">
+            <div class="main__logo">
+                <h1>Devibe</h1>
+                <img src="./static/images/devibe-light.svg" alt="devibe logo"/>
+            </div>
+                <p class="main__title">
+                    — работа, рост,<br/> блокчейн,<br/> сообщество.
+                    
+                </p>
+        
+
+            <div class="main__background">
+                <!-- <img style="background-size: cover;" src="./static/images/logo_main.svg" /> -->
+            </div>
+            <div class="main__border-top"></div>
+            <p class="main__description">
+                Devibe объединяет лучшие решения для поиска работы, создания портфолио и обучения, предлагая уникальный подход к подтверждению квалификации.
+            </p>
+            <div class="main__border-bottom"></div>
+            <button class="main__button" data-scroll-to="contacts">
+                Оставить заявку
+                <span class="main__button_arrow" >
+                    <img src="./static/images/arrow-right.svg" />
+                </span>
+            </button>
+        </div>
+    </section>
+
+     <section class="about">
+    <img class="about__figure" src="./static/images/figure-1.svg"/>
+    <div class="about__wrapper">
+        <p class="about__title">О платформе</p>
+        <p class="about__description">Мы создаем платформу, где IT-таланты находят возможности, а бизнес — лучших специалистов.</p>
+
+        <div class="about__border"></div>
+
+        <div class="about__list">
+            <div class="about__list_element">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon"  src="./static/images/bag.svg"/ alt="bag">
+                </div>
+                <p class="about__list_element-desc">Выставляй свое портфолио и привлекай клиентов</p>
+                <p class="about__list_element-num">01</p>
+            </div>
+        
+            <div class="about__border"></div>
+        
+            <div class="about__list_element">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/search.svg"/ alt="search">
+                </div>
+                <p class="about__list_element-desc">Ищи работу и предлагай услуги</p>
+                <p class="about__list_element-num">02</p>
+            </div>
+       
+            <div class="about__border"></div>
+      
+            <div class="about__list_element">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/brain.svg" alt="brain"/>
+                </div>
+                <p class="about__list_element-desc">Развивайся, участвуя в образовательных программах</p>
+                <p class="about__list_element-num">03</p>
+            </div>
+        
+            <div class="about__border"></div>      
+        
+            <div class="about__list_element">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/mark.svg" alt="mark"/>
+                </div>
+                <p class="about__list_element-desc">Подтверждай квалификацию через NFT-сертификаты</p>
+                <p class="about__list_element-num">04</p>
+            </div>
+            <div class="about__border"></div>
+        </div>
+
+        
+
+    </div>
+    </section>
+
+    <section class="about-helper">
+        <img class="about__figure-2" src="./static/images/figure-2.svg"/>
+        <img class="about__figure-3" src="./static/images/figure-3.svg"/>
+
+        <div class="about__wrapper" >
+        <p class="about__title" >Как Devibe помогает</p>
+
+        <div class="about__toggle">
+            <button class="about__toggle_button about__toggle_button--active" data-target="employers">
+                Работодателям
+            </button>
+            <button class="about__toggle_button" data-target="specialists">
+                Специалистам
+            </button>
+        </div>
+        
+        <div class="about__list about__content about__content--active" id="employers">
+
+            <div class="about__border"></div>
+
+            <div class="about__list_element tall">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon"  src="./static/images/bag.svg" alt="bag"/>
+                </div>
+                <p class="about__list_element-desc"><span class="about_list-element-bold">Доступ к проверенным специалистам:</span> Платформа ориентирована на быстрорастущий рынок IT-услуг, где постоянно растет спрос на квалифицированных специалистов.</p>
+                <p class="about__list_element-num">01</p>
+            </div>
+        
+            <div class="about__border"></div>
+        
+            <div class="about__list_element tall"> 
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/search.svg" alt="search"/>
+                </div>
+                <p class="about__list_element-desc"><span class="about_list-element-bold">Простая система подбора:</span> Удобные фильтры и рейтинговая система помогают быстро находить подходящих кандидатов.</p>
+                <p class="about__list_element-num">02</p>
+            </div>
+       
+            <div class="about__border"></div>
+      
+            <div class="about__list_element tall">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/brain.svg" alt="brain"/>
+                </div>
+                <p class="about__list_element-desc"><span class="about_list-element-bold">Гарантия качества: </span> NFT-сертификаты подтверждают уровень знаний, а система escrow защищает от недобросовестных исполнителей.</p>
+                <p class="about__list_element-num">03</p>
+            </div>
+        
+            <div class="about__border"></div>      
+        </div>
+
+        <div class="about__list about__content" id="specialists">
+            <div class="about__border"></div>
+            <div class="about__list_element tall">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon"  src="./static/images/bag.svg" alt="bag"/>
+                </div>
+                <p class="about__list_element-desc"><span class="about_list-element-bold">Больше возможностей: </span> Размещение портфолио дает доступ к заказчикам и работодателям.</p>
+                <p class="about__list_element-num">01</p>
+            </div>
+        
+            <div class="about__border"></div>
+        
+            <div class="about__list_element tall">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/search.svg" alt="seacrh"/>
+                </div>
+                <p class="about__list_element-desc"><span class="about_list-element-bold">Профессиональный рост:</span> Участие в образовательных программах и получение NFT-сертификатов повышает квалификацию.</p>
+                <p class="about__list_element-num">02</p>
+            </div>
+       
+            <div class="about__border"></div>
+      
+            <div class="about__list_element tall">
+                <div class="about__list_element-wrapper">
+                    <img class="about__list_element-icon" src="./static/images/brain.svg" alt="brain"/>
+                </div>
+                <p class="about__list_element-desc"><span class="about_list-element-bold">Безопасные сделки:</span> Встроенная система escrow гарантирует защиту как заказчиков, так и исполнителей.</p>
+                <p class="about__list_element-num">03</p>
+            </div>
+        
+            <div class="about__border"></div>      
+        </div>
+
+
+        </div>
+    </section>
+
+    
+ 
+    <section class="partners">
+        <img class="partners__figure" src="./static/images/figure-4.svg" />
+        <img class="partners__figure-2" src="./static/images/figure-5.svg" />
+        <img class="partners__figure-3" src="./static/images/figure-6.svg" />
+    <div class="partners__wrapper">
+        <p class="partners__title">Для инвесторов/партнеров</p>
+        
+        <div class="partners__toggle">
+            <button class="partners__toggle_button partners__toggle_button--active" data-target="investors">
+                Инвесторам
+            </button>
+            <button class="partners__toggle_button" data-target="partners">
+                Партнерам
+            </button>
+        </div>
+
+        <p class="partners__description partners__content partners__content--active" id="investors">Devibe — это платформа, которая объединяет IT-специалистов и работодателей. Мы предлагаем вам уникальную возможность стать частью этого быстрого роста и успешного стартапа.<br/>
+            Почему стоит инвестировать в Devibe?</p>
+
+        <p class="partners__description partners__content" id="partners">Мы создаем платформу, где IT-специалисты и работодатели могут эффективно сотрудничать, и приглашаем вас стать частью этого процесса. Партнерство с Devibe — это возможность расширить ваш бизнес, повысить узнаваемость и войти в растущий рынок IT-услуг.</br>
+            Почему стоит стать партнером Devibe?</p>
+
+            <div class="partners__list partners__content partners__content--active" id="investors">
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Высокий потенциал роста:</span> Платформа ориентирована на быстрорастущий рынок IT-услуг, где постоянно растет спрос на квалифицированных специалистов.</p>
+                    <p class="partners__list_element-num">01</p>
+                </div>
+                
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Инновационные технологии:</span> Блокчейн и NFT-сертификаты для подтверждения квалификаций обеспечивают безопасность и доверие на платформе.</p>
+                    <p class="partners__list_element-num">02</p>
+                </div>
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Устойчивый доход: </span> Разнообразие источников монетизации (подписки, премиальные аккаунты, комиссии) создает стабильный денежный поток.</p>
+                    <p class="partners__list_element-num">03</p>
+                </div>
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Потенциал масштабирования:</span> Платформа готова к выходу на международные рынки, что откроет новые горизонты для роста.</p>
+                    <p class="partners__list_element-num">04</p>
+                </div>
+
+                <div class="partners__border"></div>
+            
+            </div>
+
+
+            <div class="partners__list partners__content" id="partners">
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Доступ к квалифицированным специалистам: </span>Мы предлагаем вам доступ к широкому кругу профессионалов с подтвержденными навыками.</p>
+                    <p class="partners__list_element-num">01</p>
+                </div>
+                
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Расширение возможностей для вашего бизнеса: </span>Разнообразие функций платформы, таких как портфолио, образовательные программы и система NFT-сертификатов, поможет вам укрепить позиции на рынке.</p>
+                    <p class="partners__list_element-num">02</p>
+                </div>
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Надежная система безопасности: </span>Мы используем блокчейн для подтверждения квалификаций</p>
+                    <p class="partners__list_element-num">03</p>
+                </div>
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Совместный рост:  </span> Партнерство с Devibe открывает новые возможности для роста вашего бизнеса через взаимодействие с перспективной платформой.</p>
+                    <p class="partners__list_element-num">04</p>
+                </div>
+
+                <div class="partners__border"></div>
+            
+            </div>
+
+            <p class="partners__description subtitle partners__content" id="partners">Что мы предлагаем нашим партнерам?</p>
+
+            <div class="partners__list partners__content" id="partners">
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc">Образовательные и технологические возможности для развития ваших сотрудников.</p>
+                    <p class="partners__list_element-num">01</p>
+                </div>
+                
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Общий маркетинг и продвижение: </span>Мы будем активно поддерживать ваши инициативы на платформе.</p>
+                    <p class="partners__list_element-num">02</p>
+                </div>
+
+                <div class="partners__border"></div>
+    
+                <div class="partners__list_element tall">
+                    <div class="partners__list_element-wrapper">
+                        <img class="partners__list_element-icon"  src="./static/images/mark-black.svg" alt="mark"/>
+                    </div>
+                    <p class="partners__list_element-desc"><span class="about_list-element-bold">Долгосрочное сотрудничество:  </span>Партнерство с Devibe поможет вам интегрировать новые технологии и расширить клиентскую базу.</p>
+                    <p class="partners__list_element-num">03</p>
+                </div>
+
+                <div class="partners__border"></div>
+            
+            </div>
+
+            <button class="partners__button" data-scroll-to="contacts">
+                Оставить заявку
+                <span class="partners__button_arrow" >
+                    <img src="./static/images/arrow-right.svg" alt="arrow"/>
+                </span>
+            </button>
+
+    </div>
+    </section>  
+
+    <section class="questions">
+        <img class="questions__figure" src="./static/images/figure-7.svg" />
+        <img class="questions__figure-2" src="./static/images/figure-8.svg" />
+        <div class="questions__wrapper">
+            <p class="questions__title">Часто задаваемые вопросы</p>
+        <div class="questions__list">
+            <div class="questions__accordeon">
+                <div class="questions__accordeon_header">
+                    <p class="questions__accordeon_header-title">
+                        Чем Devibe отличается от других платформ?
+                    </p>
+                    <img class="questions__accordeon_header-arrow" src="./static/images/arrow-white.svg"/>
+                </div>
+                <div class="questions__accordeon_content">
+                    <p class="questions__accordeon_desc">
+                        Devibe объединяет поиск работы, обучение и командообразование в одном месте, 
+                        а также использует блокчейн для подтверждения навыков.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__accordeon">
+                <div class="questions__accordeon_header">
+                    <p class="questions__accordeon_header-title">
+                        Как подтверждаются квалификации специалистов?
+                    </p>
+                    <img class="questions__accordeon_header-arrow" src="./static/images/arrow-white.svg"/>
+                </div>
+                <div class="questions__accordeon_content">
+                    <p class="questions__accordeon_desc">
+                        Мы внедрили систему NFT-сертификатов, которые невозможно подделать. Они подтверждают навыки и опыт IT-специалистов.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__accordeon">
+                <div class="questions__accordeon_header">
+                    <p class="questions__accordeon_header-title">
+                        Какие источники монетизации у Devibe?
+                    </p>
+                    <img class="questions__accordeon_header-arrow" src="./static/images/arrow-white.svg"/>
+                </div>
+                <div class="questions__accordeon_content">
+                    <p class="questions__accordeon_desc">
+                        Платформа зарабатывает на подписках, премиальных аккаунтах, комиссии за проекты и образовательных услугах.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__wrapper">
+            <p class="contacts__title">Обратная связь</p>
+            <p class="contacts__desc">
+                Хотите узнать больше о Devibe или обсудить инвестиционные возможности? Заполните форму, и мы свяжемся с вами в ближайшее время!
+            </p>
+            <form class="contacts__form" id="contactForm">
+                <div class="contacts__form-row">
+                    <input class="contacts__form_input" placeholder="Имя" name="name" type="text" id="name">
+                    <input class="contacts__form_input" placeholder="Телефон" name="phone" type="tel" id="phone">
+                    <input class="contacts__form_input" placeholder="Почта" name="email" type="email" id="email">
+                </div>
+                <textarea class="contacts_form_textarea" placeholder="Сообщение" name="message" id="message"></textarea>
+
+                <button type="submit" class="partners__button" id="send-button">
+                    Оставить заявку
+                    <span class="partners__button_arrow" >
+                        <img src="./static/images/arrow-right.svg" />
+                    </span>
+                </button>
+            </form>
+
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            
+            <div class="footer__info">
+                <p class="footer__info-title">Остались<br/> вопросы?</p>
+                <div class="footer__info_contacts">
+                    <p class="footer_info_contacts-text">@elina_yak</p>
+                    <p class="footer_info_contacts-text">
+                        Elaakupova09@gmail.com
+                    </p>
+                    <img src="./static/images/footer-background.svg" class="footer__background"/>
+                </div>
+            </div>
+
+            <button class="footer__button" data-scroll-to="contacts">
+                Оставить заявку
+                <span class="footer__button_arrow" >
+                    <img src="./static/images/arrow-left-black.svg" />
+                </span>
+            </button>
+            
+        </div>
+    </footer>  
+    
+    
+    
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.10/purify.min.js"></script>
+    <script type="module" src="./static/script/toggle-about.js"></script>
+    <script type="module" src="./static/script/accordeon.js"></script>
+    <script type="module" src="./static/script/form.js"></script>
+    <script type="module" src="./static/script/scroll.js"></script>
+</html>
