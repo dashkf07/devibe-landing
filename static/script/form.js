@@ -155,7 +155,7 @@ function validateField(input, validateFn) {
 
 // 📌 Функция отправки данных
 async function sendFormData(formData) {
-    return fetch("http://localhost:3001/api/send-notification", {
+    return fetch("http://devibeinvest:3001/api/send-notification", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
